@@ -1,0 +1,31 @@
+        .ad-board {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+            overflow: hidden; /* Скрыть переполнение */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ad-slider {
+            display: flex;
+            animation: slide 15s infinite; /* Анимация прокрутки */
+        }
+
+        .ad-slider img {
+            max-width: 100%;
+            border-radius: 10px;
+            flex: 0 0 100%; /* Каждое изображение занимает 100% ширины */
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
